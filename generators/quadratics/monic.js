@@ -6,7 +6,7 @@
 
 module.exports = function() {
     let r = [Math.floor(Math.random() * 20) + 1, Math.floor(Math.random() * 20) + 1];
-    let q = `x^2  + ${r[0] + r[1]} + ${r[0] * r[1]} `;
+    let q = `x^2  + ${r[0] + r[1]}x + ${r[0] * r[1]} `;
     let s = `(x + ${r[0]})(x + ${r[1]})`;
     return [q, s];
 };
