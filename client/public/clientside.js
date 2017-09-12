@@ -1,15 +1,20 @@
 /* sends the request to the server and updates the
  * body of the page with the returned questions */
 function executeRequest(sort, num) {
+    document.getElementById("questions").innerHTML = "";
+    document.getElementById("solutions").innerHTML = "";
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", `http:\/\/localhost:3490/qgen?sort=${sort}&num=${num}`, true);
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let questions = JSON.parse(this.responseText);
             for(let i=0; i < questions.length; i++) {
-                let item = document.createElement("li");
-                item.innerText = questions[i][0] + " " + questions[i][1];
-                document.getElementById("output").appendChild(item);
+                let quest = document.createElement("li");
+                quest.innerText = questions[i][0];
+                let sol = document.createElement("li");
+                sol.innerText = questions[i][1];
+                document.getElementById("questions").appendChild(quest);
+                document.getElementById("solutions").appendChild(sol);
             }
         }
     }
