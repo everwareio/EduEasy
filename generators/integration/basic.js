@@ -7,6 +7,6 @@
 module.exports = function() {
     let i = Math.floor(Math.random() * 40) + 1;
     let q = `x^${i}`;
-    let s = `x^${i+1}/${i+1}`;
+    let s = `x^${i+1}/${i+1} + C`;
     return [q, s];
 };

@@ -8,7 +8,7 @@ module.exports = function() {
     let i = Math.floor(Math.random() * 40) + 1;
     let c = Math.floor(Math.random() * 20) + 1;
     let q = `${c}x^${i}`;
-    let s = `${c}x^${i+1}/${i+1}`;
+    let s = `${c}x^${i+1}/${i+1} + C`;
     return [q, s];
 };
 
