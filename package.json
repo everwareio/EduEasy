@@ -1,6 +1,7 @@
 {
     "name": "edu-easy-web",
     "version": "0.0.1",
+    "main": "main.js",
     "dependencies": {
         "express": "^4.15.4"
     }
