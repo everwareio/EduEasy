@@ -5,16 +5,36 @@ html, body{
     margin: 0;
 }
 
+.heart {
+    color: red;
+}
+
 #container {
     width: 500px;
     margin: 0 auto;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+h1 > p {
+    font-size: 10px;
+    color: grey;
 }
 
 .outcol {
     float: left;
     display: inline-block;
     width: 250px;
+    min-height: 400px;
+}
+
+.outcol > h3 {
+    font-family: sans-serif;
+    font-weight: lighter;
 }
 
 .output {
@@ -23,5 +43,12 @@ html, body{
 }
 
 #footer {
-    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    text-align: right;
+}
+
+#footer > a {
+    color: #008416;
 }
