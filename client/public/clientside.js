@@ -4,7 +4,7 @@ function executeRequest(sort, num) {
     document.getElementById("questions").innerHTML = "";
     document.getElementById("solutions").innerHTML = "";
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", `http:\/\/localhost:8081/qgen?sort=${sort}&num=${num}`, true);
+    xhttp.open("GET", `qgen?sort=${sort}&num=${num}`, true);
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let questions = JSON.parse(this.responseText);
