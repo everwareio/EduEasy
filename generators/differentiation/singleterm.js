@@ -6,7 +6,7 @@
 
 module.exports = function() {
     let c = Math.floor(Math.random() * 40) + 1;
-    let i = Math.floor(Math.random() * 15) + 1;
+    let i = Math.floor(Math.random() * 15) + 2;
     let q = `${c}x^${i}`;
     let s = `${c*i}x^${i-1}`;
     return [q, s];

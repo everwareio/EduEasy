@@ -2,5 +2,7 @@
 module.exports = {
     "monic": require("./quadratics/monic"),
     "nonmonic": require("./quadratics/nonmonic"),
-    "singleterm": require("./differentiation/singleterm.js")
+    "singleterm": require("./differentiation/singleterm"),
+    "constantterm": require("./differentiation/constant"),
+    "twosquaresdiff": require("./quadratics/twosquaresdiff")
 };
