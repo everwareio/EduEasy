@@ -17,7 +17,6 @@ app.get("/qgen", (req, res) => {
         let thisq  = generators[req.query.sort]();
         q.push(thisq);
     }
-    console.log(q);
     res.end(JSON.stringify(q));
 });
 
