@@ -20,4 +20,4 @@ app.get("/qgen", (req, res) => {
     res.end(JSON.stringify(q));
 });
 
-app.listen(3490);
+app.listen(3000);
