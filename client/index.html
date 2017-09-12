@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>EduEasy</title>
+    <script src="clientside.js"></script>
+    <link href="style.css">
+  </head>
+  <body>
+      <form id="genform">
+      <select name="sort" required>
+        <option value="monic">Monic Quadratics</option>
+        <option value="nonmonic">Non-monic Quadratics</option>
+        <option value="singleterm">Single Term Differentiation</option>
+      </select>
+      <input type="number" name="num" required>
+      <input type="submit" value="Generate Questions">  
+    </form>
+    <ol id="output"></ol> 
+  </body>
+</html>
