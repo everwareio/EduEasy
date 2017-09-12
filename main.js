@@ -4,8 +4,21 @@ app = express();
 // load up the generators
 generators = require("./generators");
 
+// make the client directory public
+app.use(express.static("./client/public"));
+
 app.get("/", (req, res) => {
-    res.send("EduEasy");
+    res.sendFile("client/index.html", {root: __dirname});
+});
+
+app.get("/qgen", (req, res) => {
+    let q = [];
+    for(let i=0; i <= req.query.num-1; i++){
+        let thisq  = generators[req.query.sort]();
+        q.push(thisq);
+    }
+    console.log(q);
+    res.end(JSON.stringify(q));
 });
 
 app.listen(3490);
