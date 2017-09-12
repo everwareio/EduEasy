@@ -1,6 +1,6 @@
-express = require("express");
-app = express();
-
+const express = require("express");
+let app = express();
+let port = process.env.PORT || 8081;
 // load up the generators
 generators = require("./generators");
 
@@ -20,4 +20,4 @@ app.get("/qgen", (req, res) => {
     res.end(JSON.stringify(q));
 });
 
-app.listen(8081);
+app.listen(port);
