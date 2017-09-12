@@ -5,12 +5,23 @@ html, body{
     margin: 0;
 }
 
-#output {
-    display: block;
-    width: 100%;    
+#container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
 }
 
-#output > span {
-   display: block;
-   width: 100%;
+.outcol {
+    float: left;
+    display: inline-block;
+    width: 250px;
+}
+
+.output {
+    font-size: 12px;
+    font-family: "Courier New", monospace;
+}
+
+#footer {
+    font-size: 12px;
 }
