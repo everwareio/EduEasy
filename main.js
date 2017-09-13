@@ -12,11 +12,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/qgen", (req, res) => {
-    let q = [];
-    for(let i=0; i <= req.query.num-1; i++){
-        let thisq  = generators[req.query.sort]();
-        q.push(thisq);
-    }
+    if(req.query.num <= 1000){
+        let q = [];
+        for(let i=0; i <= req.query.num-1; i++){
+            let thisq  = generators[req.query.sort]();
+            q.push(thisq);
+        }
+    } else {
+        q = [["Don't break my server please, less questions", ":)"]];
+    }   
     res.end(JSON.stringify(q));
 });
 
