@@ -6,5 +6,8 @@ module.exports = {
     "constantterm": require("./differentiation/constant"),
     "twosquaresdiff": require("./quadratics/twosquaresdiff"),
     "integrationbasic": require("./integration/basic"),
-    "integrationcoeff": require("./integration/coefficient")
+    "integrationcoeff": require("./integration/coefficient"),
+    "phystimedilation": require("./dilation/time"),
+    "physmassdilation": require("./dilation/mass"),
+    "physlengthdilation": require("./dilation/length")
 };

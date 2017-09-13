@@ -43,10 +43,11 @@ h1 > p {
 }
 
 #footer {
+    display: block;
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 10px;
-    text-align: right;
+    text-align:right;
 }
 
 #footer > a {
