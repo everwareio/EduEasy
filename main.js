@@ -20,4 +20,6 @@ app.get("/qgen", (req, res) => {
     res.end(JSON.stringify(q));
 });
 
-app.listen(port);
+app.listen(port, ()=>{
+    console.log("Listening on port " + port);
+});
